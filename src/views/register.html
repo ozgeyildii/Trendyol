@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+  </head>
+  <body>
+    <header class="text-center"><h1>Üye Ol</h1></header>
+    <form>
+      <div class="container m-auto text-center">
+      <div class="m-3">
+        <label for="name">İsim:</label>
+      </div>
+      <div class="m-3">
+        <input type="text" placeholder="İsim" id="name" min="2" required />
+      </div>
+
+      <div class="m-3">
+        <label for="surname">Soyisim:</label>
+      </div>
+      <div class="m-3">
+        <input
+          type="text"
+          placeholder="Soyisim"
+          id="surname"
+          min="2"
+          required
+        />
+      </div>
+
+      <div class="m-3">
+        <label for="email">E-mail:</label>
+      </div>
+      <div class="m-3">
+        <input type="email" placeholder="E-mail" id="email" required />
+      </div>
+
+      <div class="m-3">
+        <label for="password">Şifre:</label>
+      </div>
+      <div class="m-3">
+        <input
+          type="password"
+          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+          placeholder="Şifre"
+          id="password"
+          required
+        />
+      </div>
+      <div class="m-3">
+        <button type="submit" class="btn btn-success" formaction="payment.html">
+          Giriş Yap
+        </button>
+      </div>
+    </form>
+  </body>
+</html>

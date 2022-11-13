@@ -1,0 +1,104 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.104.2">
+    <title>Payment</title>
+
+<meta name="theme-color" content="#712cf9">
+
+
+    <!-- Custom styles for this template -->
+    <link href="form-validation.css" rel="stylesheet">
+  </head>
+  <body class="bg-light">
+
+  <main>
+
+
+    <div class="container">
+      <div class="col-md-7 col-lg-8">
+        <h4 class="mb-3">Adres</h4>
+        <form class="needs-validation" novalidate>
+          <div class="row g-3">
+            <div class="col-sm-6">
+              <label for="firstName" class="form-label">First name</label>
+              <input type="text" class="form-control" id="firstName" placeholder="İsim" required>
+            </div>
+
+            <div class="col-sm-6">
+              <label for="lastName" class="form-label">Soyisim</label>
+              <input type="text" class="form-control" id="lastName" placeholder="Soyisim" required>
+            </div>
+
+
+            <div class="col-12">
+              <label for="email" class="form-label">Email</label>
+              <input type="email" class="form-control" id="email" placeholder="you@example.com">
+            </div>
+
+            <div class="col-12">
+              <label for="address" class="form-label">Address</label>
+              <input type="text" class="form-control" id="address" placeholder="Güzel Sk." required>
+            </div>
+
+
+
+          <hr class="my-4">
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="same-address">
+            <label class="form-check-label" for="same-address">Kargo adresim fatura adresimle aynı.</label>
+          </div>
+
+          <div class="form-check">
+            <input type="checkbox" class="form-check-input" id="save-info">
+            <label class="form-check-label" for="save-info">Bilgilerimi kaydet.</label>
+          </div>
+
+          <hr class="my-4">
+
+          <h4 class="mb-3">Ödeme</h4>
+
+          <div class="my-3">
+            <div class="form-check">
+              <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+              <label class="form-check-label" for="credit">Credit card</label>
+            </div>
+            <div class="form-check">
+              <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="debit">Debit card</label>
+            </div>
+            <div class="form-check">
+              <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+              <label class="form-check-label" for="paypal">PayPal</label>
+            </div>
+          </div>
+
+          <div class="row g-0">
+            <div class="col-md-6">
+              <label for="cc-name" class="form-label">Kartın Üzerindeki İsim</label>
+              <input type="text" class="form-control" id="cc-name" placeholder="" required>
+            </div>
+
+            <div class="col-md-6">
+              <label for="cc-number" class="form-label">Kredi Kartı Numarası</label>
+              <input type="text" class="form-control" id="cc-number"  required>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-expiration" class="form-label">Son Kullanma Tarihi</label>
+              <input type="text" class="form-control" id="cc-expiration" required>
+            </div>
+
+            <div class="col-md-3">
+              <label for="cc-cvv" class="form-label">CVV</label>
+              <input type="text" class="form-control" id="cc-cvv" placeholder="CVV" required>
+            </div>
+          </div>
+
+</html>

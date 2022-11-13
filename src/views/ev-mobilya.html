@@ -1,0 +1,169 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="/src/scss/custom-bootstrap.scss" />
+
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <main>
+      <!-- reusable components -->
+      <%= require('html-loader!../partials/header.html').default %>
+
+      <header class="header-main">
+        <h1 class="text-capitalize text-center">öne çıkanlar</h1>
+      </header>
+      <form>
+        <div class="container mb-5 border border-rounded border-info">
+          <div class="row mt-5 g-3 justify-content-evenly">
+            <div class="col-sm-6 col-md-5">
+              <div class="card text-center">
+                <img
+                  src="<%= require('../images/ev1.jpg') %>"
+                  class="card-img-top"
+                  alt="Ürün"
+                />
+                <div class="card-body">
+                  <h5 class="card-title mt-2">Ikea</h5>
+                  <p class="card-text">Masa Takımı</p>
+                  <p class="card-text">15000TL</p>
+                </div>
+                <div class="card-button text-center">
+                  <button
+                    type="submit"
+                    class="btn btn-success"
+                    formaction="login.html"
+                  >
+                    Ekle
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-5">
+              <div class="card text-center mb-5">
+                <img
+                  src="<%= require('../images/ev2.jpg') %>"
+                  class="card-img-top"
+                  alt="Ürün"
+                />
+                <div class="card-body">
+                  <h5 class="card-title mt-2">Ikea</h5>
+                  <p class="card-text">Sandalye Takımı</p>
+                  <p class="card-text">15000TL</p>
+                </div>
+                <div class="card-button text-center">
+                  <button
+                    type="submit"
+                    class="btn btn-success"
+                    formaction="login.html"
+                  >
+                    Ekle
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-5">
+              <div class="card text-center mb-5">
+                <img
+                  src="<%= require('../images/ev3.jpg') %>"
+                  class="card-img-top"
+                  alt="Ürün"
+                />
+                <div class="card-body">
+                  <h5 class="card-title mt-2">Ikea</h5>
+                  <p class="card-text">Koltuk Takımı</p>
+                  <p class="card-text">15000TL</p>
+                </div>
+                <div class="card-button text-center">
+                  <button
+                    type="submit"
+                    class="btn btn-success"
+                    formaction="login.html"
+                  >
+                    Ekle
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-5">
+              <div class="card text-center mb-5">
+                <img
+                  src="<%= require('../images/ev4.jpg') %>"
+                  class="card-img-top"
+                  alt="Ürün"
+                />
+                <div class="card-body">
+                  <h5 class="card-title mt-2">Ikea</h5>
+                  <p class="card-text">Koltuk Takımı</p>
+                  <p class="card-text">15000TL</p>
+                </div>
+                <div class="card-button text-center">
+                  <button
+                    type="submit"
+                    class="btn btn-success"
+                    formaction="login.html"
+                  >
+                    Ekle
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-5">
+              <div class="card text-center mb-5">
+                <img
+                  src="<%= require('../images/ev5.jpg') %>"
+                  class="card-img-top"
+                  alt="Ürün"
+                />
+                <div class="card-body">
+                  <h5 class="card-title mt-2">Ikea</h5>
+                  <p class="card-text">Koltuk Takımı</p>
+                  <p class="card-text">15000TL</p>
+                </div>
+                <div class="card-button text-center">
+                  <button
+                    type="submit"
+                    class="btn btn-success"
+                    formaction="login.html"
+                  >
+                    Ekle
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-sm-6 col-md-5">
+              <div class="card text-center mb-5">
+                <img
+                  src="<%= require('../images/ev6.jpg') %>"
+                  class="card-img-top"
+                  alt="Ürün"
+                />
+                <div class="card-body">
+                  <h5 class="card-title mt-2">Ikea</h5>
+                  <p class="card-text">Koltuk Takımı</p>
+                  <p class="card-text">15000TL</p>
+                </div>
+                <div class="card-button text-center">
+                  <button
+                    type="submit"
+                    class="btn btn-success"
+                    formaction="login.html"
+                  >
+                    Ekle
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
+
+      <%= require('html-loader!../partials/footer.html').default %>
+    </main>
+  </body>
+</html>
